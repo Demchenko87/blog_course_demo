@@ -11,7 +11,8 @@
 </head>
 <body>
 <header id="main_navigation" class="clearfix">
-	<a href="index.html" class="name">Demchenko Roman</a>
+<%= link_to "Demchenko Roman", root_path, class: "name" %>
+
 	<nav>
 	
 	<%= link_to "Articles", posts_path %>
@@ -22,6 +23,20 @@
 
 </header>
 <%= yield %>
+
+<footer id="main_footer">
+<p class="copyright">&copy; 2015 Demchenko Roman</p>
+<nav>
+	<a href="https://www.linkedin.com/profile/view?id=AAMAABHrAv4BvzYDjFGyUhgfO58Nh0BArrVq0vs&trk=hp-identity-photo"  target="_blank"><i class="fa fa-linkedin"></i>
+
+</a>
+	<a href="https://github.com/Demchenko87" target="_blank"><i class="fa fa-github"></i>
+</a>
+	<a href="https://www.facebook.com/roman.demchenko.965"><i class="fa fa-facebook" target="_blank"></i>
+</a>
+</nav>
+	
+</footer>
 
 </body>
 </html>

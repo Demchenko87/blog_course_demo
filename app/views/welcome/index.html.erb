@@ -1,0 +1,29 @@
+<div class="wrapper wrapper_padding clearfix">
+	<div class="col-1 about homepage_content">
+		<h2>About</h2>
+		<hr>
+		<p>Real Estate is one of free website templates created by TemplateMonster.com team. This website template is optimized for 1280X1024 screen resolution. It is also XHTML & CSS valid.
+
+<a href="#">Download</a> the basic package of this Real Estate Template (without PSD source) that is available for anyone without registration. If you need PSD source files, please go to the template download page at TemplateMonster to leave the e-mail address that you want the free template ZIP package to be delivered to.</p>
+
+	</div>
+		<div class="col-2 homepage_content">
+		<h2>Stuff I`ve Written</h2>
+		<hr>
+		<% @posts.each do |post| %>
+
+		<h3><a href="#"><%= link_to post.title, post %></a></h3>
+		<p class="date"><%= post.created_at.strftime("%A, %b, %d")%></p>
+		<% end %>
+	</div>
+		<div class="col-3 homepage_content">
+		<h2>Stuff I`ve Build</h2>
+		<hr>
+		<h3><a href="#">The Do list</a></h3>
+		<p class="date">Fridat April 10th</p>
+		<h3><a href="#">Unicasts</a></h3>
+		<p class="date">Fridat April 11th</p>
+		<h3><a href="#">Demchenko Roman</a></h3>
+		<p class="date">Fridat April 12th</p>
+	</div>
+</div>
